@@ -484,7 +484,7 @@ export default React.createClass({
       <View style={[styles.container, {
         width: state.width,
         height: state.height
-      }]}>
+      }, this.props.outerContainerStyle]}>
         <ScrollView ref="scrollView"
           {...props}
           contentContainerStyle={[styles.wrapper, props.style]}
