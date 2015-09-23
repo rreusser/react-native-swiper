@@ -196,6 +196,13 @@ export default React.createClass({
     this.props = this.injectState(this.props)
   },
 
+  componentWillReceiveProps(props) {
+    this.setState({
+      width: props.width || width,
+      height: props.height || height
+    })
+  },
+
   componentDidMount() {
     this.autoplay()
   },
